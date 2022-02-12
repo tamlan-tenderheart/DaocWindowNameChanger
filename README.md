@@ -1,5 +1,5 @@
 # Dark Age of Camelot Window Title Changer
-A small. simple, and stupid script to change the title of a DAOC game window to identify the account
+A small, simple, and stupid script to change the title of a DAOC game window to identify the account
 
 To use this script, you must have AHK (https://www.autohotkey.com/) installed.
 
