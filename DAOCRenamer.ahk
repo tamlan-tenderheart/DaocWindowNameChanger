@@ -17,16 +17,17 @@ SetKeyDelay,,50
 
 ; variables
 
-global Account1 = "NAME1"
-global Account2 = "NAME2"
-global Account3 = "NAME3"
-global Account4 = "NAME4"
+global ServerName = "Celestius RvR Server"
+global Account1 = "ACCOUNT_NAME1"
+global Account2 = "ACCOUNT_NAME2"
+global Account3 = "ACCOUNT_NAME3"
+global Account4 = "ACCOUNT_NAME4"
 
 SetDAOCWindowTitle(Name) {
     Hwnd := WinExist("A") 
     IfWinExist, ahk_id %Hwnd% ahk_class DAoCMWC 
     {
-        WinSetTitle ahk_id %Hwnd%,,Account - %Name%        
+        WinSetTitle ahk_id %Hwnd%,,%ServerName% (%Name%)        
     }
 }
 
