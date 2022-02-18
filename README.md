@@ -21,5 +21,8 @@ For script DAOCRenamerForCelstius.ahk
 This is a specialization of the naming script that I have only tested with Celestius clients, and it might not work for Live or other freeshare clients.
 Basically it works by finding all Windows that have game.dll as their starting image. It then goes over each one and extracts the command line that launched it. The Celestius launcher uses a command line like the following:
 
-"C:\Program Files\Electronic Arts\Dark Age of Camelot\game.dll <ip address> <port> <id> <accountName_characterPage> <hashed password>"
-The script parses this command line and extracts the accountName_characterPage and sets the title of the Window to this value.
+"C:\Program Files\Electronic Arts\Dark Age of Camelot\game.dll [ip address] [port] [id] [accountName_characterPage] [hashed password]"
+The script parses this command line and ignores everything except the account_page string and sets the title of the Window to this value.
+
+For example, if I launched account testAccount and selected character page 1, the title of the Window would be: 
+**Celestius RvR Server (testAccount_1)**
